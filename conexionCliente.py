@@ -1,9 +1,14 @@
-from socket import create_connection
+import socket
+ 
+s = socket.socket()
 
-# Conectar al servidor.
-with create_connection(("localhost", 6190)) as conn:
-    print("Conectado al servidor.")
-    # Enviar datos.
-    conn.sendall(b"Hola mundo!")
-
-print("Conexión cerrada.")
+s.connect(("localhost", 60))
+ 
+while True:
+    mensaje = input("Mensaje a enviar >> ")
+ 
+    s.send(mensaje)
+ 
+    if mensaje == "close":
+        break
+print("Adios.")

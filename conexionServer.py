@@ -1,23 +1,24 @@
-from socket import socket
-
-# Crear el socket.
-with socket() as s:
-    # Asociarlo a una dirección de IP y un puerto.
-    s.bind(("localhost", 6190))
-    # Indicar que este socket actuará como servidor.
-    s.listen()
-    # Esperar a la conexión del cliente.
-    print("Esperando al cliente...")
-    conn, address = s.accept()
-    print(f"address[0]:address[1] se ha conectado.")
-    # Esperar a que el cliente envíe datos.
-    while True:
-        data = conn.recv(1024)
-        # Chequear que no esté vacío.
-        if data:
-            # Imprimirlo en pantalla y cerrar el socket.
-            print("El cliente ha enviado:", data)
-            break
-
-# El socket se cierra automáticamente al salir del bloque "with".
-print("Conexión cerrada.")
+import socket
+ 
+#instanciamos un objeto para trabajar con el socket
+s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+ 
+s.bind(("localhost", 60))
+s.listen(1)
+ 
+sc, addr = s.accept()
+ 
+ 
+while True: 
+    recibido = sc.recv(1024)
+ 
+    #Si el mensaje recibido es la palabra close se cierra la aplicacion
+    if recibido == "close":
+        break
+ 
+    #Si se reciben datos nos muestra la IP y el mensaje recibido
+    print("Recibido")
+ 
+    #Devolvemos el mensaje al cliente
+    sc.send(recibido)
+ 
