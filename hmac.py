@@ -66,9 +66,6 @@ class HMAC:
 def hmacGenerator(key, msg=None, digestmod=''):
     return HMAC(key, msg, digestmod)
 
-msgInput = input("Enter the Message = ")
-keyInput = input("Enter the Secret Key = ")
-
 def hmacFuncion(msgInput,keyInput):
     message = bytes(msgInput, 'utf-8')
     key = bytes(keyInput, 'utf-8')

@@ -1,9 +1,10 @@
 import hmac
 
-hmacMensaje = hmac.msgInput
-hmacClave = hmac.keyInput
-
-hmacCalculado = hmac.hmacFuncion(hmacMensaje,hmacClave)
-paquete = []
-paquete.append((hmacMensaje,hmacCalculado))
-print(paquete)
+def func(msgInput,keyInput):
+    paquete = []
+    mensaje = msgInput
+    print(mensaje)
+    hmacCalculado = hmac.hmacFuncion(mensaje,keyInput)
+    paquete.append((mensaje,hmacCalculado))
+    print(paquete)
+    return paquete
