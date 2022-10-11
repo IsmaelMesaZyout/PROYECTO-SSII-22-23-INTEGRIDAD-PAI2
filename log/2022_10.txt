@@ -1,0 +1,20 @@
+Dia 11 Hora 10:11: FALLO - Se ha modificado un mensaje
+Dia 11 Hora 10:11: FALLO - Se ha modificado un mensaje
+Dia 11 Hora 10:11: ACIERTO - No se ha realizado un replay
+Dia 11 Hora 10:11: FALLO - Se ha modificado un mensaje
+Dia 11 Hora 10:11: ACIERTO - No se ha realizado un replay
+Dia 11 Hora 10:11: FALLO - Se ha modificado un mensaje
+Dia 11 Hora 10:11: ACIERTO - No se ha realizado un replay
+Dia 11 Hora 10:11: FALLO - Se ha modificado un mensaje
+Dia 11 Hora 10:11: ACIERTO - No se ha realizado un replay
+Han ocurrido un total de 5 fallos
+Dia 11 Hora 10:12: FALLO - Se ha modificado un mensaje
+Dia 11 Hora 10:12: FALLO - Se ha modificado un mensaje
+Dia 11 Hora 10:12: ACIERTO - No se ha realizado un replay
+Dia 11 Hora 10:12: FALLO - Se ha modificado un mensaje
+Dia 11 Hora 10:12: ACIERTO - No se ha realizado un replay
+Dia 11 Hora 10:13: FALLO - Se ha modificado un mensaje
+Dia 11 Hora 10:13: ACIERTO - No se ha realizado un replay
+Dia 11 Hora 10:13: FALLO - Se ha modificado un mensaje
+Dia 11 Hora 10:13: ACIERTO - No se ha realizado un replay
+Han ocurrido un total de 10 fallos
