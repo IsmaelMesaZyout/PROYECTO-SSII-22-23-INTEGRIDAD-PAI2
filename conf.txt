@@ -1,1 +1,1 @@
-num_pruebas=10000
+num_pruebas=5
